@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vidhya's portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+        body {
+            transition: all 0.3s ease;
+
+        }
+
+
+
+        /* Different views */
+        body.desktop main {
+            font-size: 18px;
+        }
+
+        body.tablet main {
+            max-width: 768px;
+            margin: auto;
+            font-size: 16px;
+            background: #f9fafd;
+        }
+
+        body.mobile main {
+            max-width: 480px;
+            margin: auto;
+            font-size: 14px;
+            background: #dfe7e9;
+
+        }
+
+        main {
+            padding: 80px 20px;
+        }
+
+
+
+        .divider {
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .divider::before,
+        .divider::after {
+            flex: 1;
+            content: '';
+            padding: 3px;
+            background-color: rgba(139, 13, 105, 0.701);
+            margin: 5px;
+        }
+
+        .logo {
+            width: 70px;
+            /* increase size */
+            height: auto;
+            /* keep aspect ratio */
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body class="desktop">
+
+    <!-- Navbar with logos -->
+    <nav class="navbar bg-light shadow-sm fixed-top">
+        <div class="container-fluid">
+            <div class="d-flex gap-4">
+                <!-- Mobile Icon -->
+                <i class="bi bi-phone icon-btn" onclick="setView('mobile')" title="Mobile View"></i>
+                <!-- Tablet Icon -->
+                <i class="bi bi-tablet icon-btn" onclick="setView('tablet')" title="Tablet View"></i>
+                <!-- Desktop Icon -->
+                <i class="bi bi-laptop icon-btn" onclick="setView('desktop')" title="Desktop View"></i>
+            </div>
+
+    </nav>
+    <main>
+
+        <!-- projects section -->
+        <section id="projects">
+            <div class="row d-flex justify-content-start align-items-left my-3 ">
+                <h2 class="text-center fw-bolder text-info"> MY PROJECTS</h2>
+                <p class="lead text-secondary">
+                    Here are some of my recent projects that showcase my skills and expertise in software development.
+                    Each project highlights my ability to create innovative solutions and deliver high-quality results.
+                    Feel free to explore and reach out if you'd like to learn more or collaborate on future endeavors!
+                </p>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../images/ecommerce.jpeg" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">E-commerce Website</h5>
+                                <hr>
+                                <p class="card-text">Built a responsive e-commerce website like Flipkart with product
+                                    listings, search, cart, and checkout functionality.</p>
+                                <a href="../pages/ecommerce.html" class="btn btn-success">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../images/fashion.jpeg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">FASHION SHOPPING CART</h5>
+                                <hr>
+                                <p class="card-text">Built a responsive shopping cart built with HTML, CSS, and Bootstrap for
+                                    easy product selection and checkout..</p>
+                                <a href="../pages/fashion_shopping.html" class="btn btn-success">view More</a>
+                            </div>
+                        </div>
+                    </div>
+               
+                <div class="col">
+                        <div class="card h-100">
+                            <img src="../images/djgirl.jpg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">BOOK MY EVENT</h5>
+                                <hr>
+                                <p class="card-text">Bulit an responsive event booking site that lets users browse events, book tickets, and manage reservations online with ease....</p>
+                                <a href="../pages/event.html" class="btn btn-success">view More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+            </section>
+             <!-- footer -->
+   <footer class="bg-dark text-white pt-5 my-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-12 col-md-4 mb-4">
+        <h5 class="fw-bold">Vidhya Sankar</h5>
+        <p>
+          Connect with me through social media or drop a message.
+          I’m open to collaborations, freelance projects, and opportunities to build meaningful web solutions.
+        </p>
+      </div>
+
+      <!-- Products / Links -->
+      <div class="col-6 col-md-4 mb-4">
+        <h5 class="fw-bold">Skills</h5>
+        <ul class="list-unstyled">
+          <li><a href="#!" class="text-white text-decoration-none">CSS</a></li>
+          <li><a href="#!" class="text-white text-decoration-none">Bootstrap</a></li>
+          <li><a href="#!" class="text-white text-decoration-none">Git</a></li>
+          <li><a href="#!" class="text-white text-decoration-none">Python</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-6 col-md-4 mb-4">
+        <h5 class="fw-bold">Contact</h5>
+        <p><i class="fas fa-home me-2"></i> Kottayam, Karukachal</p>
+        <p><i class="fas fa-envelope me-2"></i> vidhyashankar921@gmail.com</p>
+        <p><i class="fas fa-phone me-2"></i> +91 123 456 789</p>
+      </div>
+    </div>
+
+    <!-- Social icons -->
+    <div class="d-flex justify-content-center gap-3 mt-3 mb-3">
+      <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white fs-5"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="text-white fs-5"><i class="fab fa-github"></i></a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center py-3 border-top border-secondary mt-3">
+      © 2025 Vidhya Sankar | All Rights Reserved
+    </div>
+  </div>
+</footer>
+   
+
+
+
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+                function setView(view) {
+                    document.body.className = view; // apply mobile / tablet / desktop
+                }
+            </script>
+
+</body>
+</main>
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vidhya's portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+        body {
+            transition: all 0.3s ease;
+
+        }
+
+        .logo {
+            width: 60px;
+            height: 40px;
+            cursor: pointer;
+            object-fit: contain;
+            transition: transform 0.2s;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+
+
+
+
+        .divider {
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .divider::before,
+        .divider::after {
+            flex: 1;
+            content: '';
+            padding: 3px;
+            background-color: rgba(139, 13, 105, 0.701);
+            margin: 5px;
+        }
+
+        .logo {
+            width: 70px;
+            /* increase size */
+            height: auto;
+            /* keep aspect ratio */
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body class="desktop">
+
+    <!-- Navbar with logos -->
+    <nav class="navbar bg-light shadow-sm fixed-top">
+        <div class="container-fluid">
+            <div class="d-flex gap-4">
+                <!-- Mobile Icon -->
+                <i class="bi bi-phone icon-btn" onclick="setView('mobile')" title="Mobile View"></i>
+                <!-- Tablet Icon -->
+                <i class="bi bi-tablet icon-btn" onclick="setView('tablet')" title="Tablet View"></i>
+                <!-- Desktop Icon -->
+                <i class="bi bi-laptop icon-btn" onclick="setView('desktop')" title="Desktop View"></i>
+            </div>
+
+    </nav>
+
+
+
+    <main>
+        <!-- About Me-->
+        <div class="container">
+            <h2 class="divider text-center my-5">ABOUT ME</h2>
+            <div class="card mb-3 bg-dark text-white text-center">
+                <div class="row g-0 p-2">
+                    <div class="col-md-4 ">
+                        <img src="../images/Study Habits.jpeg" class="img-fluid w-100  h-100  rounded p-2" alt="...">
+                    </div>
+                    <div class="col-md-8 ">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3 fw-bold">My Studies </h5>
+                            <span class="fw-bold">Degree </span>
+                            <ul>
+                                <li class="card-text">PGM COLLEGE,KANGAZHA</li>
+                            </ul>
+                            <span class="fw-bold">Stream </span>
+                            <ul>
+                                <li class="card-text">BACHELOR OF COMPUTER APPLICATION</li>
+                            </ul>
+                            <span class="fw-bold">Pass of Year </span>
+                            <ul>
+                                <li class="card-text">july-2018 to July-2021</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+       
+        <div class="card mb-3 bg-dark text-white text-center p-2">
+            <div class="row g-0 ">
+                <div class="col-md-4 order-md-2">
+                    <img src="../images/course.jpeg" class="img-fluid w-100 h-100 rounded p-2" alt="...">
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3"> Entri Elevate </h5>
+                        <span class="fw-bold">Course </span>
+                        <ul>
+                            <li class="card-text">MERN Full Stack Developer (FSD)</li>
+                        </ul>
+                        <span class="fw-bold">Technology's </span>
+                        <ul>
+                            <!-- <li class="card-text"></li> -->
+                            <li class="card-text">HTML, CSS, Bootstrap, React JS</li>
+                            <!-- <li class="card-text"></li> -->
+                            <!-- <li class="card-text"></li> -->
+                            <li class="card-text">Node JS, Mongo DB, Express JS</li>
+                            <!-- <li class="card-text"></li> -->
+                            <!-- <li class="card-text"></li> -->
+                        </ul>
+                        <span class="fw-bold">Pass of Year </span>
+                        <ul>
+                            <li class="card-text">JULY-2025 to PRESENT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card mb-3 bg-dark text-white text-center">
+            <div class="row g-0 p-2">
+                <div class="col-md-4 ">
+                    <img src="../images/personaldetail.jpeg" class="img-fluid w-100  h-100  rounded p-2" alt="...">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3 fw-bold">PERSONAL DETAILS </h5>
+                        <span class="fw-bold">NAME </span>
+                        <ul>
+                            <li class="card-text">Vidya Sankar M S</li>
+                        </ul>
+                        <span class="fw-bold">DOB </span>
+                        <ul>
+                            <li class="card-text">01-11-2000</li>
+                        </ul>
+                        <span class="fw-bold">FROM</span>
+                        <ul>
+                            <li class="card-text">Kottayam,karukachal</li>
+                        </ul>
+                        <span class="fw-bold">EMAIL</span>
+                        <ul>
+                            <li class="card-text">vidyashankr921@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        </div>
+ <!-- contact form -->
+        <div class="container mt-4">
+            <h3 class="fw-bold mb-4">Say Hi! and let's create
+                something together.</h3>
+            <a href="../pages/contact.html" class="btn glow-btn btn-lg">Contact Me</a>
+        </div>
+        </div>
+        
+        </section>
+  
+    <!-- footer -->
+   <footer class="bg-dark text-white pt-5 my-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-12 col-md-4 mb-4">
+        <h5 class="fw-bold">Vidhya Sankar</h5>
+        <p>
+          Connect with me through social media or drop a message.
+          I’m open to collaborations, freelance projects, and opportunities to build meaningful web solutions.
+        </p>
+      </div>
+
+      <!-- Products / Links -->
+      <div class="col-6 col-md-4 mb-4">
+        <h5 class="fw-bold">Skills</h5>
+        <ul class="list-unstyled">
+          <li><a href="#!" class="text-white text-decoration-none">CSS</a></li>
+          <li><a href="#!" class="text-white text-decoration-none">Bootstrap</a></li>
+          <li><a href="#!" class="text-white text-decoration-none">Git</a></li>
+          <li><a href="#!" class="text-white text-decoration-none">Python</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-6 col-md-4 mb-4">
+        <h5 class="fw-bold">Contact</h5>
+        <p><i class="fas fa-home me-2"></i> Kottayam, Karukachal</p>
+        <p><i class="fas fa-envelope me-2"></i> vidhyashankar921@gmail.com</p>
+        <p><i class="fas fa-phone me-2"></i> +91 123 456 789</p>
+      </div>
+    </div>
+
+    <!-- Social icons -->
+    <div class="d-flex justify-content-center gap-3 mt-3 mb-3">
+      <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white fs-5"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="text-white fs-5"><i class="fab fa-github"></i></a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center py-3 border-top border-secondary mt-3">
+      © 2025 Vidhya Sankar | All Rights Reserved
+    </div>
+  </div>
+</footer>
+   
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function setView(view) {
+            document.body.className = view; // apply mobile / tablet / desktop
+        }
+    </script>
+
+</body>
+  </main>
+
+</html>

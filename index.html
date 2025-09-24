@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vidhya's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+        body {
+            transition: all 0.3s ease;
+
+        }
+
+        .logo {
+            width: 60px;
+            height: 40px;
+            cursor: pointer;
+            object-fit: contain;
+            transition: transform 0.2s;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+
+
+
+        .divider {
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .divider::before,
+        .divider::after {
+            flex: 1;
+            content: '';
+            padding: 3px;
+            background-color: rgba(139, 13, 105, 0.701);
+            margin: 5px;
+        }
+
+        .logo {
+            width: 70px;
+            /* increase size */
+            height: auto;
+            /* keep aspect ratio */
+            cursor: pointer;
+
+        }
+
+        .timeline {
+            position: relative;
+            height: 50px;
+            padding-left: 60px;
+            border-left: 8px solid #d212959b;
+            /* vertical line */
+        }
+
+        .yellow-text {
+
+            color: yellow;
+            font-weight: bold;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body class="desktop">
+
+    <!-- Navbar with logos -->
+    <nav class="navbar bg-light shadow-sm fixed-top">
+        <div class="container-fluid">
+            <div class="d-flex gap-4">
+                <!-- Mobile Icon -->
+                <i class="bi bi-phone icon-btn" onclick="setView('mobile')" title="Mobile View"></i>
+                <!-- Tablet Icon -->
+                <i class="bi bi-tablet icon-btn" onclick="setView('tablet')" title="Tablet View"></i>
+                <!-- Desktop Icon -->
+                <i class="bi bi-laptop icon-btn" onclick="setView('desktop')" title="Desktop View"></i>
+            </div>
+
+    </nav>
+
+
+
+    <!-- nav bar page section -->
+    <main class="container bg-white text-center text-dark ">
+
+        <ul class="nav justify-content-start mb-4 gap-3">
+
+            <img src="./assets/icons/Vs Logo.jpeg " alt="Logo" width="100" height="100" class="logo">
+
+            <li class="nav-item">
+                <a class="nav-link active fw-bolder " aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-bolder" href="../pages/about.html">about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-bolder" href="../pages/projects.html">projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-bolder" href="../pages/contact.html">contact</a>
+
+            </li>
+        </ul>
+
+
+        <!-- image section -->
+        <section id="home">
+            <div class="d-flex justify-content-start align-items-left">
+                <img src="./images/left.jpeg" alt="Profile" width="20%" height="200px" d-flex justify-content-start>
+            </div>
+            <div class="profile-container ">
+
+                <div class="glow-circle"></div>
+                <img src="./images/unnamed.jpg"
+                    class="col-md-5 float-md-end mb-2 ms-md-3 rounded-circle object-fit-contain border rounded"
+                    alt="image">
+            </div>
+            <div class="fw-bolder fst-italic dark-grey-text ">
+                Hello there..!
+                <br>
+
+                I'am Vidya Sankar
+                <br>
+                <p>currently pursuing <span class="yellow-text">ENTRI Elevate</span> certification in MERN Stack
+                    Development.
+                    I’m really passionate about solving real-world problems through MERN stack technologies.</p>
+                <br>
+            </div>
+
+
+        </section>
+
+        <!-- page content -->
+        <div class="btn d-flex justify-content-center align-items-center my-3 gap-3">
+
+            <a href="./assets/cv/Vidya_Sankarms_Resume.pdf" download class="btn glow-btn">Download CV</a>
+            <a href="./pages/about.html" class="btn glow-btn">More</a>
+        </div>
+        <div class="d-flex justify-content-end align-items-right">
+
+            <img src="./images/right.jpeg" alt="Profile" width="20%" height="200px" d-flex justify-content-end>
+        </div>
+        <!-- projects section -->
+        <section id="projects">
+            <div class="row d-flex justify-content-start align-items-left my-4">
+                <h2 class="divider fw-bold text-secondary">Projects</h2>
+                <p class="lead text-secondary">
+                    Here are some of my recent projects that showcase my skills and expertise in software development.
+                    Each project highlights my ability to create innovative solutions and deliver high-quality results.
+                    Feel free to explore and reach out if you'd like to learn more or collaborate on future endeavors!
+                </p>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../images/ecommerce.jpeg" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">E-commerce Website</h5>
+                                <hr>
+                                <p class="card-text">Built a responsive e-commerce website like Flipkart with product
+                                    listings, search, cart, and checkout functionality.</p>
+                                <a href="./pages/ecommerce.html" class="btn btn-success">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../images/fashion.jpeg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">FASHION SHOPPING CART</h5>
+                                <hr>
+                                <p class="card-text">Built a responsive shopping cart built with HTML, CSS, and
+                                    Bootstrap for
+                                    easy product selection and checkout..</p>
+                                <a href="./pages/fashion_shopping.html" class="btn btn-success">view More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../images/djgirl.jpg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">BOOK MY EVENT</h5>
+                                <hr>
+                                <p class="card-text">Bulit an responsive event booking site that lets users browse
+                                    events, book tickets, and manage reservations online with ease....</p>
+                                <a href="./pages/event.html" class="btn btn-success">view More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-5">
+            <div class="container ">
+                <h2 class="divider  fw-bold text-center  text-secondary">My Skills</h2>
+
+                <div class="row">
+
+                    <!-- Frontend Skills -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Frontend</h5>
+                                <p>HTML <span class="float-end">90%</span></p>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 90%;"></div>
+                                </div>
+                                <p>CSS <span class="float-end">85%</span></p>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 85%;"></div>
+                                </div>
+                                <p>Bootstrap <span class="float-end">80%</span></p>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-info" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Backend</h5>
+                                <p>Python <span class="float-end">85%</span></p>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 85%;"></div>
+                                </div>
+                                <p>SQL <span class="float-end">80%</span></p>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-info" style="width: 80%;"></div>
+                                </div>
+                                <p>Node.js <span class="float-end">70%</span></p>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Tools</h5>
+                                <p>Git <span class="float-end">85%</span></p>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 85%;"></div>
+                                </div>
+                                <p>VS Code <span class="float-end">90%</span></p>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 90%;"></div>
+                                </div>
+                                <p>github <span class="float-end">80%</span></p>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-warning" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- testimonial -->
+        <section id="Testimonial">
+            <div class="row d-flex justify-content-start align-items-left my-4">
+                <h2 class="divider fw-bold text-secondary">Testimonial</h2>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/firstcaro (1).jpeg" class="d-block w-100 custom-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/secondcaro (1).jpeg" class="d-block w-100 custom-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block ">
+                                
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/lastcaro (1).jpeg" class="d-block w-100 custom-img " alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+
+        </section>
+
+        <!-- contact form -->
+        <div class="container mt-4">
+            <h3 class="fw-bold mb-4">Say Hi! and let's create
+                something together.</h3>
+            <a href="../pages/contact.html" class="btn glow-btn btn-lg">Contact Me</a>
+        </div>
+        </div>
+        </section>
+    
+    <!-- footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block" id="contact">
+                <span>Get connected with me on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" id="about">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i> Vidhya Sankar
+                        </h6>
+                        <p>
+                            "Connect with me through social media or drop a message.
+                            I’m open to collaborations, freelance projects, and opportunities to build meaningful web
+                            solutions.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">CSS</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Bootstrap</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">GIT</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">PYTHON</a>
+                        </p>
+                    </div>
+
+
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> vidya sankar,<br>
+                            kottayam,karukachal</p>
+                        <p>
+                        <i class="fas fa-envelope me-3"></i>
+                            vidhyashankar921
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright:
+            <a class="text-reset fw-bold" href="#">vidhyashankar921</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function setView(view) {
+            document.body.className = view; // apply mobile / tablet / desktop
+        }
+    </script>
+
+</body>
+</main>
+</html>

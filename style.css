@@ -1,0 +1,99 @@
+/* Different views */
+        body.desktop main {
+            font-size: 18px;
+        }
+
+        body.tablet main {
+            max-width: 768px;
+            margin: auto;
+            font-size: 16px;
+            background: #f9fafd;
+        }
+
+        body.mobile main {
+            max-width: 480px;
+            margin: auto;
+            font-size: 14px;
+            background: #dfe7e9;
+
+        }
+
+        main {
+            padding: 80px 20px;
+        }
+
+       /* change normal link color */
+.nav-link {
+  color: black !important;   /* override default blue */
+}
+
+/* change active link color */
+.nav-link.active {
+  color: rgb(34, 2, 2) !important;     /* active state */
+}
+
+/* change hover color */
+.nav-link:hover {
+  color: rgb(175, 27, 133) !important;
+}
+        /* Profile Glow Effect */
+        .profile-container {
+
+            position: relative;
+            display: inline-block;
+            margin-top: 45px;
+        }
+
+        .profile-container img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+            border: 5px solid #fff;
+            box-shadow: 0 0 20px rgba(195, 6, 195, 0.8);
+        }
+
+        .glow-circle {
+            position: absolute;
+            top: 45%;
+            left: 52%;
+            width: 280px;
+            height: 250px;
+            border-radius: 100%;
+            border: 10px solid rgba(219, 37, 207, 0.537);
+            /* glowing ring */
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            box-shadow: 0 0 20px rgba(14, 212, 242, 0.6);
+        }
+/* Example: fixed size carousel */
+.carousel .custom-img {
+  width: 100%;
+  height: 500px;   /* change this to the height you want */
+  object-fit: cover; /* keeps image ratio, crops excess */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 20px; /* optional, for spacing */
+  border-radius: 10px; /* optional, for rounded edges */}
+  
+  .glow-btn {
+  background: #d429da; /* Bootstrap primary blue */
+  color: white;
+  text-decoration: none; /* remove underline */
+  padding: 10px 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 0 10px #ef18e1, 0 0 20px #0d6efd;
+  transition: 0.3s ease-in-out;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 20px #db1dde9c, 0 0 40px #6c9be1, 0 0 60px #f920fc;
+  transform: scale(1.05);
+  color: #fff; /* keep text white */
+}
